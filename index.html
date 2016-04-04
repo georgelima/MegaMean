@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html ng-app="AcaShare">
+  <head>
+    <meta charset="utf-8">
+    <title>AcademicShare</title>
+    <link rel="stylesheet" href="css/app.css" media="screen" title="no title" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,700' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  </head>
+  <body>
+    <nav>
+      <main class="container">
+      <div class="nav-wrapper">
+        <a href="#/" class="brand-logo"><strong>AcademicShare</strong></a>
+        <ul id="slide-out" class="side-nav">
+      <li><a href="#/files">Arquivos Enviados</a></li>
+      <li><a href="">Sobre</a></li>
+    </ul>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#/files">Arquivos Enviados</a></li>
+      <li><a href="">Sobre</a></li>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      </div>
+    </main>
+    </nav>
+    <ng-view></ng-view>
+    <footer class="page-footer">
+        <main class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">AcadêmicShare</h5>
+              <p class="grey-text text-lighten-4"></p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links Úteis</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">UFPI</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">LINEUPI</a></li>
+              </ul>
+            </div>
+          </div>
+        </main>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2016 - Nenhum direito reservado
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript">
+      $('#textarea1').val('New Text');
+      $('#textarea1').trigger('autoresize');
+      $(".button-collapse").sideNav();
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.tooltipped').tooltip({delay: 50});
+      });
+    </script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
+    <script src="bower_components/angular-socket-io/socket.js"></script>
+    <script type="text/javascript" src="js/mainCtrl.js"></script>
+    <script type="text/javascript" src="js/value/configApi.js"></script>
+    <script type="text/javascript" src="js/services/serviceSocket.js"></script>
+    <script type="text/javascript" src="js/services/serviceAPI.js"></script>
+    <script type="text/javascript" src="js/controllers/uploadController.js"></script>
+    <script type="text/javascript" src="js/controllers/fileCtrl.js"></script>
+
+    <!-- SOCKET.IO -->
+    <script type="text/javascript" src="bower_components/socket.io-client/socket.io.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1><span class="glyphicon glyphicon-level-up"></span>Arquivos Enviados</h1>
+    <p class="text-center text-danger" ng-hide="files.length > 0">
+      Nenhum Arquivo Enviado!
+    </p>
+    <table class="table table-responsive" ng-show="files.length > 0">
+      <tr>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Data da Postagem</th>
+        <th>Ação</th>
+      </tr>
+      <tr ng-repeat="file in files">
+        <td><a href="" ng-click="downloadFile(file.name_file)">{{file.name_file}}</a></td>
+        <td>{{file.description}}</td>
+        <td>{{file.date_post | date:dd/mm/yyyy}}</td>
+        <td><button type="button" class="btn btn-sm btn-danger" ng-click="excluiArquivo(file)">Excluir</button></td>
+      </tr>
+    </table>
+    <div class="progress" ng-show="ajax">
+      <div class="indeterminate"></div>
+    </div>
+
+    <p ng-show="deletado" class="text-info text-center">
+      Arquivo Deletado!
+    </p>
+    <a href="/AcaShare" class="btn-floating btn-large waves-effect waves-light red" alt="voltar"><i class="material-icons">replay</i></a>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+{
+  "name": "academicshare",
+  "version": "0.0.1",
+  "description": "Compartilhamento de Lista e Trabalhos Acadêmicos",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "George Lima",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "connect-multiparty": "^2.0.0",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "express-load": "^1.1.15",
+    "file-type": "^3.8.0",
+    "mega": "^0.2.0",
+    "mongo-sanitize": "^1.0.0",
+    "mongoose": "^4.4.8",
+    "socket.io": "^1.4.5"
+  }
+}
