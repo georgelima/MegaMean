@@ -1,6 +1,4 @@
-### ** MEGAMEAN ** ###
-
-# README #
+# MEGA MEAN #
 
 Using Module Mega for NodeJs [Unofficial Node.js SDK for Mega](https://github.com/tonistiigi/mega) 
 
