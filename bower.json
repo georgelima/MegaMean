@@ -18,6 +18,9 @@
   "dependencies": {
     "angular": "^1.5.2",
     "bootstrap": "^3.3.6",
-    "angular-route": "^1.5.2"
+    "angular-route": "^1.5.2",
+    "socket.io-client": "*",
+    "ng-file-upload":"*",
+    "Materialize": "*"
   }
 }

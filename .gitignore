@@ -1,0 +1,5 @@
+#ignorados fdps
+bower_components
+node_modules
+browse.VC.db
+.vscode
