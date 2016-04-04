@@ -1,12 +1,6 @@
 (function(angular, undefined){
   angular.module('AcaShare').controller('UploadController', ['$scope', 'Upload','configApi', function($scope, Upload, configApi){
 
-    var socket = io('http://192.168.1.4:3000');
-
-    socket.on('server-envia', function(data){
-      Materialize.toast('Um novo arquivo foi enviado!', 3000, 'rounded')
-    });
-
     $scope.ajaxUp = false;
     $scope.enviaForm = function(file){
       var name_file = file.name_file;
