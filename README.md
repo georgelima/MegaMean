@@ -1,5 +1,7 @@
 # MEGA MEAN #
 
+- Studying mean stack
+
 Using Module Mega for NodeJs [Unofficial Node.js SDK for Mega](https://github.com/tonistiigi/mega) 
 
 ### How do I get set up? ###
