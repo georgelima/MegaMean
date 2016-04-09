@@ -22,13 +22,8 @@ var allowCrossDomain = function(req, res, next) {
 app.use(allowCrossDomain);
 
 load('models').then('controllers').then('routes').into(app);
-// load('sockets').into(io);
 
-// server.listen(app.get('port'), function(){
-//   console.log('Rodando na porta ' + app.get('port'));
-// });
-
-app.controllers.arquivo.server.listen('3000', function(){
+app.controllers.arquivo.server.listen(app.get('port') || process.env.PORT,function(){
   console.log('Rodando na porta 3000');
 });
 

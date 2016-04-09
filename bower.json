@@ -1,10 +1,10 @@
 {
   "name": "AcaShare",
-  "description": "",
+  "description": "Interface Academic Share",
   "main": "index.html",
   "moduleType": [],
   "authors": [
-    "george liam"
+    "george lima"
   ],
   "license": "MIT",
   "homepage": "",
