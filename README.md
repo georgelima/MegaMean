@@ -14,5 +14,3 @@ cd backend
 node(mon) app.js 'EmailMegaAccount' 'PasswordMegaAccount'
 ```
 
-## Configure
-- Change ip's in backend/app.js , js/value/configApi.js , index.html
